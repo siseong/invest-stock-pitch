@@ -45,11 +45,15 @@ def calculate(stock, purchase_date, chart, as_of_date=None):
         day = datetime.fromtimestamp(stamp, tz).date()
         closing_time = time(15, 30) if stock['market'] == 'KR' else time(16, 0)
         closed_at = datetime.combine(day, closing_time, tzinfo=tz).timestamp()
-        if day.isoformat() <= as_of_date and closed_at <= now and finite(close):
+        if day.isoformat() <= max(as_of_date, purchase_date) and closed_at <= now and finite(close):
             points.append({'date': day.isoformat(), 'price': round(close, 2), 'timestamp': closed_at})
     points.sort(key=lambda p: p['timestamp'])
     base = next((p for p in points if p['date'] == purchase_date), None)
     result = {'symbol': stock['symbol'], 'fetchedAt': utcnow(), 'source': 'Yahoo Finance', 'sourceUrl': 'https://finance.yahoo.com/quote/' + urllib.parse.quote(stock['symbol'], safe=''), 'basePrice': None, 'currentPrice': None, 'returnPct': None, 'history': [], 'asOf': None, 'status': 'unavailable', 'message': ''}
+    purchase_close = datetime.combine(date.fromisoformat(purchase_date), time(15, 30) if stock['market'] == 'KR' else time(16), tzinfo=tz).timestamp()
+    if as_of_date < purchase_date or (not base and purchase_close > now):
+        result.update(status='pending', basePrice=base['price'] if base else None, message='매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다')
+        return result
     if not base:
         result['message'] = purchase_date + ' 종가가 제공되지 않습니다'
         return result
@@ -78,7 +82,7 @@ def fetch_stock(stock, purchase_date, as_of_date=None):
     as_of_date = as_of_date or cutoff_date()
     tz = ZoneInfo('Asia/Seoul' if stock['market'] == 'KR' else 'America/New_York')
     start = int(datetime.combine(date.fromisoformat(purchase_date) - timedelta(days=3), time.min, tzinfo=tz).timestamp())
-    end = int(datetime.combine(date.fromisoformat(as_of_date) + timedelta(days=1), time.min, tzinfo=tz).timestamp())
+    end = int(datetime.combine(date.fromisoformat(max(as_of_date, purchase_date)) + timedelta(days=1), time.min, tzinfo=tz).timestamp())
     params = urllib.parse.urlencode({'period1': start, 'period2': max(end, start+86400), 'interval': '1d', 'events': 'splits', 'includePrePost': 'false'})
     errors = []
     for host in ['query1.finance.yahoo.com', 'query2.finance.yahoo.com']:
@@ -100,7 +104,7 @@ def refresh(as_of_date=None):
     try:
         config = resource()
         as_of_date = as_of_date or cutoff_date()
-        old = {r['symbol']: r for r in (SNAPSHOT or {}).get('quotes', []) if r.get('priceDate', '9999') <= as_of_date} if (SNAPSHOT or {}).get('purchaseDate') == config['purchaseDate'] and (SNAPSHOT or {}).get('priceMode') == 'previous_close' else {}
+        old = {r['symbol']: r for r in (SNAPSHOT or {}).get('quotes', []) if r.get('priceDate') and r['priceDate'] <= as_of_date} if (SNAPSHOT or {}).get('purchaseDate') == config['purchaseDate'] and (SNAPSHOT or {}).get('priceMode') == 'previous_close' else {}
         rows = []
         with LOCK:
             STATE.update(completed=0, total=len(config['stocks']), lastError=None)
@@ -118,7 +122,7 @@ def refresh(as_of_date=None):
                     STATE['completed'] += 1
         order = {s['symbol']: i for i, s in enumerate(config['stocks'])}
         rows.sort(key=lambda row: order[row['symbol']])
-        if not any(r.get('status') == 'ok' for r in rows):
+        if not any(r.get('status') in ('ok', 'pending') for r in rows):
             raise ValueError('全 종목 조회 실패: 기존 가격 파일을 유지합니다')
         result = {'purchaseDate': config['purchaseDate'], 'asOfDate': as_of_date, 'priceMode': 'previous_close', 'updatedAt': utcnow(), 'quotes': rows}
         CACHE.parent.mkdir(exist_ok=True)

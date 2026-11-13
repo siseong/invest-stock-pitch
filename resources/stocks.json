@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "title": "EMBA Stock Pitch",
-  "purchaseDate": "2026-11-12",
+  "purchaseDate": "2026-11-13",
   "returnBasis": "local_currency_price_return",
   "stocks": [
     {
@@ -10,12 +10,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "금융",
-      "presenters": [
-        "공태완"
-      ],
-      "sources": [
-        "../공태완202673_828308_9645837_BNK_금융지주_Stock_Pitch_공태완.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "SK하이닉스",
@@ -23,12 +18,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "반도체",
-      "presenters": [
-        "구자명"
-      ],
-      "sources": [
-        "../구자명202059_855612_9646826_StockPitch_구자명.ppt"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "IonQ",
@@ -36,14 +26,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "양자컴퓨팅",
-      "presenters": [
-        "권오현",
-        "문호상"
-      ],
-      "sources": [
-        "../권오현202633_827416_9646072_IONQ_EMBA_BUY_Pitch_Light_3Slides.pdf",
-        "../문호상202871_828319_9639304_투자론_IonQ_투자분석보고서_2025_26871 문호상.ppt"
-      ]
+      "selectionCount": 2
     },
     {
       "name": "월덱스",
@@ -51,12 +34,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "반도체",
-      "presenters": [
-        "김경무"
-      ],
-      "sources": [
-        "../김경무202208_854203_9647285_월덱스 투자 피치 _ 100만원 리밸런싱 실험-1.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "솔브레인",
@@ -64,12 +42,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "반도체",
-      "presenters": [
-        "김길란"
-      ],
-      "sources": [
-        "../김길란202645_821505_9638968_투자론_stock pitch_김길란1.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "팔로알토 네트웍스",
@@ -77,12 +50,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "소프트웨어",
-      "presenters": [
-        "김민기"
-      ],
-      "sources": [
-        "../김민기202953_828471_9639685_Palo Alto Networks(PANW)_Stock pitch_김민기.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "KB금융",
@@ -90,12 +58,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "금융",
-      "presenters": [
-        "김승찬"
-      ],
-      "sources": [
-        "../김승찬202573_827033_9630503_KB금융_StockPitch_김승찬.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "비욘드 미트",
@@ -103,12 +66,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "소비재",
-      "presenters": [
-        "김영훈"
-      ],
-      "sources": [
-        "../김영훈202535_853549_9646386_투자론 Stock Pitch_김영훈_Beyond Meat (BYND).pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "스트래티지",
@@ -116,12 +74,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "디지털자산",
-      "presenters": [
-        "김우성"
-      ],
-      "sources": [
-        "../김우성202717_847268_9645144_mstr_valuation_beamer-1.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "기아",
@@ -129,12 +82,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "자동차",
-      "presenters": [
-        "김은성"
-      ],
-      "sources": [
-        "../김은성202163_853384_9643224_기아_김은성_20261112_.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "인튜이티브 머신스",
@@ -142,12 +90,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "우주·항공",
-      "presenters": [
-        "김재유"
-      ],
-      "sources": [
-        "../김재유202004_827255_9647931_인튜이티브머신스(LUNR) 투자 이야기와 가치평가.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "SFA반도체",
@@ -155,12 +98,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "반도체",
-      "presenters": [
-        "김충일"
-      ],
-      "sources": [
-        "../김충일202412_827083_9644633_SFA반도체_StockPitch.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "버크셔 해서웨이",
@@ -168,14 +106,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "금융",
-      "presenters": [
-        "김푸른",
-        "신미향"
-      ],
-      "sources": [
-        "../김푸른202245_819812_9640643_2026년 투자론_StockPitch_김푸른.pdf",
-        "../신미향202812_819829_9647102_2026 EMBA 투자론_투자피치_신미향-1.pdf"
-      ]
+      "selectionCount": 2
     },
     {
       "name": "GS",
@@ -183,12 +114,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "지주·에너지",
-      "presenters": [
-        "류주연"
-      ],
-      "sources": [
-        "../류주연202998_853542_9644374_GS(주)Stock Pitch - 류주연.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "일라이 릴리",
@@ -196,12 +122,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "헬스케어",
-      "presenters": [
-        "문현율"
-      ],
-      "sources": [
-        "../문현율202855_827622_9646095_일라이릴리(LLY) 투자 제안.ppt"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "컨스텔레이션 에너지",
@@ -209,12 +130,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "전력·에너지",
-      "presenters": [
-        "박경배"
-      ],
-      "sources": [
-        "../박경배202067_854560_9646950_투자론 Stock Pitch 과제 (박경배 2026-27067).pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "보로노이",
@@ -222,12 +138,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "헬스케어",
-      "presenters": [
-        "박성훈"
-      ],
-      "sources": [
-        "../박성훈202301_854504_9643420_Voronoi_VRN11_Stock_Pitch_white_20261112.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "대덕전자",
@@ -235,12 +146,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "반도체",
-      "presenters": [
-        "박진선"
-      ],
-      "sources": [
-        "../박진선202555_827427_9608000_261108_투자론_Stock Pitch.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "엔비디아",
@@ -248,12 +154,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "반도체",
-      "presenters": [
-        "백승현"
-      ],
-      "sources": [
-        "../백승현202994_826781_9647025_NVIDIA_Stock_Pitch_Original_Content_Monochrome.ppt"
-      ]
+      "selectionCount": 2
     },
     {
       "name": "금호석유화학",
@@ -261,12 +162,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "화학",
-      "presenters": [
-        "성선익"
-      ],
-      "sources": [
-        "../성선익202438_847271_9646840_성선익_stock_pitch_금호석유화학.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "아이렌",
@@ -274,12 +170,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "AI 인프라",
-      "presenters": [
-        "손영우"
-      ],
-      "sources": [
-        "../손영우202275_847258_9645608_투자론_Stock pitch_손영우_2026-24275_v5 (1).ppt"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "GE 버노바",
@@ -287,12 +178,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "전력·에너지",
-      "presenters": [
-        "오성균"
-      ],
-      "sources": [
-        "../오성균202478_827588_9638166_투자론 stockpitch_2025-20478 오성균.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "삼성생명",
@@ -300,12 +186,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "금융",
-      "presenters": [
-        "유대성"
-      ],
-      "sources": [
-        "../유대성201042_85553_9635635_Stock Pitch(유대성_2012-28042).pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "LS일렉트릭",
@@ -313,12 +194,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "전력·에너지",
-      "presenters": [
-        "윤정인"
-      ],
-      "sources": [
-        "../윤정인202530_855116_9647216_윤정인(2026-27530)_StockPitch_LS일렉트릭_FV-1.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "알테오젠",
@@ -326,12 +202,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "헬스케어",
-      "presenters": [
-        "윤희중"
-      ],
-      "sources": [
-        "../윤희중202912_827094_9640807_투자론_발표자료_알테오젠_윤희중(2025-24912).pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "애브비",
@@ -339,12 +210,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "헬스케어",
-      "presenters": [
-        "이경재"
-      ],
-      "sources": [
-        "../이경재202224_819826_9636065_Stock Pitch_AbbVie_이경재_2025-29224_v1.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "BHI",
@@ -352,12 +218,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "전력·에너지",
-      "presenters": [
-        "이민구"
-      ],
-      "sources": [
-        "../이민구202113_826812_9645328_BHI_StockPitch_이민구 (23113).pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "샌디스크",
@@ -365,12 +226,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "반도체",
-      "presenters": [
-        "이영준"
-      ],
-      "sources": [
-        "../SanDisk_이영준.pptx"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "현대그린푸드",
@@ -378,12 +234,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "소비재",
-      "presenters": [
-        "이준성"
-      ],
-      "sources": [
-        "../이준성202237_827052_9647448_이준성 2025-21237.ppt"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "조비 에비에이션",
@@ -391,12 +242,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "우주·항공",
-      "presenters": [
-        "이형준"
-      ],
-      "sources": [
-        "../이형준202407_826811_9643703_조비_에비에이션(JOBY)_2025-28407.ppt"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "로켓랩",
@@ -404,12 +250,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "우주·항공",
-      "presenters": [
-        "정민수"
-      ],
-      "sources": [
-        "../정민수202133_854164_9644286_투자론 과제 - 정민수(2026-22133).pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "길리어드 사이언스",
@@ -417,12 +258,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "헬스케어",
-      "presenters": [
-        "정성연"
-      ],
-      "sources": [
-        "../정성연202218_847254_9637183_GILD_StockPitch_정성연_261110.ppt"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "삼성전자",
@@ -430,12 +266,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "반도체",
-      "presenters": [
-        "정지훈"
-      ],
-      "sources": [
-        "../정지훈202441_853702_9644196_정지훈(2026-27441)-1.ppt"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "스노우플레이크",
@@ -443,12 +274,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "소프트웨어",
-      "presenters": [
-        "최문실"
-      ],
-      "sources": [
-        "../최문실202217_827095_9646561_[투자론] 종목추천_최문실_Snowflake.pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "앨버말",
@@ -456,12 +282,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "소재",
-      "presenters": [
-        "최수정"
-      ],
-      "sources": [
-        "../최수정202669_827648_9646482_Stock Pitch — Albemarle (ALB) - 최수정_rev.ppt"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "씨에스윈드",
@@ -469,12 +290,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "전력·에너지",
-      "presenters": [
-        "최영수"
-      ],
-      "sources": [
-        "../최영수202377_853441_9645623_스탁피치(씨에스윈드_2026-28377 최영수).pdf"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "이튼",
@@ -482,12 +298,7 @@
       "market": "US",
       "currency": "USD",
       "sector": "전력·에너지",
-      "presenters": [
-        "최원호"
-      ],
-      "sources": [
-        "../최원호202474_851157_9647220_AI 전력 인프라 핵심주 이튼 투자 제안_최원호(2026 25474).ppt"
-      ]
+      "selectionCount": 1
     },
     {
       "name": "뉴파워프라즈마",
@@ -495,12 +306,7 @@
       "market": "KR",
       "currency": "KRW",
       "sector": "반도체",
-      "presenters": [
-        "함철우"
-      ],
-      "sources": [
-        "../함철우202762_854191_9626830_투자발표자료_뉴파워프라즈마_함철우_메인.pdf"
-      ]
+      "selectionCount": 1
     }
   ]
 }

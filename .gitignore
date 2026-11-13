@@ -3,3 +3,6 @@ __pycache__/
 _site/
 data/*.tmp
 .DS_Store
+
+# Local restoration data: never publish names or source filenames
+/private/

@@ -1,768 +1,502 @@
 {
-  "purchaseDate": "2026-11-12",
+  "purchaseDate": "2026-11-13",
   "asOfDate": "2026-11-12",
   "priceMode": "previous_close",
-  "updatedAt": "2026-11-13T07:27:54.167320+00:00",
+  "updatedAt": "2026-11-13T07:31:36.499436+00:00",
   "quotes": [
     {
       "symbol": "138930.KS",
-      "fetchedAt": "2026-11-13T07:27:53.642600+00:00",
+      "fetchedAt": "2026-11-13T07:31:31.529116+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/138930.KS",
-      "basePrice": 12800.0,
-      "currentPrice": 12800.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 13630.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "000660.KS",
-      "fetchedAt": "2026-11-13T07:27:53.650024+00:00",
+      "fetchedAt": "2026-11-13T07:31:31.152701+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/000660.KS",
-      "basePrice": 1254000.0,
-      "currentPrice": 1254000.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 1216000.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "IONQ",
-      "fetchedAt": "2026-11-13T07:27:53.634269+00:00",
+      "fetchedAt": "2026-11-13T07:31:30.367644+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/IONQ",
-      "basePrice": 30.86,
-      "currentPrice": 30.86,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "101160.KQ",
-      "fetchedAt": "2026-11-13T07:27:53.638518+00:00",
+      "fetchedAt": "2026-11-13T07:31:30.378134+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/101160.KQ",
-      "basePrice": 25750.0,
-      "currentPrice": 25750.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 26850.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "357780.KQ",
-      "fetchedAt": "2026-11-13T07:27:53.689177+00:00",
+      "fetchedAt": "2026-11-13T07:31:31.553321+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/357780.KQ",
-      "basePrice": 285500.0,
-      "currentPrice": 285500.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 296000.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "PANW",
-      "fetchedAt": "2026-11-13T07:27:53.715139+00:00",
+      "fetchedAt": "2026-11-13T07:31:30.769027+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/PANW",
-      "basePrice": 322.66,
-      "currentPrice": 322.66,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "105560.KS",
-      "fetchedAt": "2026-11-13T07:27:53.703199+00:00",
+      "fetchedAt": "2026-11-13T07:31:31.160161+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/105560.KS",
-      "basePrice": 151800.0,
-      "currentPrice": 151800.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 159000.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "BYND",
-      "fetchedAt": "2026-11-13T07:27:53.701651+00:00",
+      "fetchedAt": "2026-11-13T07:31:31.543541+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/BYND",
-      "basePrice": 5.41,
-      "currentPrice": 5.41,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "MSTR",
-      "fetchedAt": "2026-11-13T07:27:53.742656+00:00",
+      "fetchedAt": "2026-11-13T07:31:31.556244+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/MSTR",
-      "basePrice": 114.41,
-      "currentPrice": 114.41,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "000270.KS",
-      "fetchedAt": "2026-11-13T07:27:53.766232+00:00",
+      "fetchedAt": "2026-11-13T07:31:31.937965+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/000270.KS",
-      "basePrice": 93600.0,
-      "currentPrice": 93600.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 94600.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "LUNR",
-      "fetchedAt": "2026-11-13T07:27:53.753629+00:00",
+      "fetchedAt": "2026-11-13T07:31:31.939958+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/LUNR",
-      "basePrice": 13.03,
-      "currentPrice": 13.03,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "036540.KQ",
-      "fetchedAt": "2026-11-13T07:27:53.771336+00:00",
+      "fetchedAt": "2026-11-13T07:31:31.949290+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/036540.KQ",
-      "basePrice": 8750.0,
-      "currentPrice": 8750.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 9090.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "BRK-B",
-      "fetchedAt": "2026-11-13T07:27:53.795117+00:00",
+      "fetchedAt": "2026-11-13T07:31:32.960957+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/BRK-B",
-      "basePrice": 589.83,
-      "currentPrice": 589.83,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "078930.KS",
-      "fetchedAt": "2026-11-13T07:27:53.818348+00:00",
+      "fetchedAt": "2026-11-13T07:31:32.340780+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/078930.KS",
-      "basePrice": 82800.0,
-      "currentPrice": 82800.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 84000.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "LLY",
-      "fetchedAt": "2026-11-13T07:27:53.848928+00:00",
+      "fetchedAt": "2026-11-13T07:31:32.507610+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/LLY",
-      "basePrice": 1427.28,
-      "currentPrice": 1427.28,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "CEG",
-      "fetchedAt": "2026-11-13T07:27:53.835825+00:00",
+      "fetchedAt": "2026-11-13T07:31:32.347965+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/CEG",
-      "basePrice": 282.4,
-      "currentPrice": 282.4,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "310210.KQ",
-      "fetchedAt": "2026-11-13T07:27:53.847447+00:00",
+      "fetchedAt": "2026-11-13T07:31:32.892441+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/310210.KQ",
-      "basePrice": 109700.0,
-      "currentPrice": 109700.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 111000.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "353200.KS",
-      "fetchedAt": "2026-11-13T07:27:53.878253+00:00",
+      "fetchedAt": "2026-11-13T07:31:33.509457+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/353200.KS",
-      "basePrice": 93400.0,
-      "currentPrice": 93400.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 91300.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "NVDA",
-      "fetchedAt": "2026-11-13T07:27:53.892938+00:00",
+      "fetchedAt": "2026-11-13T07:31:32.999661+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/NVDA",
-      "basePrice": 166.19,
-      "currentPrice": 166.19,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "011780.KS",
-      "fetchedAt": "2026-11-13T07:27:53.919468+00:00",
+      "fetchedAt": "2026-11-13T07:31:33.302311+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/011780.KS",
-      "basePrice": 98500.0,
-      "currentPrice": 98500.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 97500.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "IREN",
-      "fetchedAt": "2026-11-13T07:27:53.903003+00:00",
+      "fetchedAt": "2026-11-13T07:31:33.348359+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/IREN",
-      "basePrice": 19.48,
-      "currentPrice": 19.48,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "GEV",
-      "fetchedAt": "2026-11-13T07:27:53.934478+00:00",
+      "fetchedAt": "2026-11-13T07:31:34.152994+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GEV",
-      "basePrice": 818.49,
-      "currentPrice": 818.49,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "032830.KS",
-      "fetchedAt": "2026-11-13T07:27:53.957984+00:00",
+      "fetchedAt": "2026-11-13T07:31:33.789637+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/032830.KS",
-      "basePrice": 250000.0,
-      "currentPrice": 250000.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 252000.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "010120.KS",
-      "fetchedAt": "2026-11-13T07:27:53.969352+00:00",
+      "fetchedAt": "2026-11-13T07:31:34.515298+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/010120.KS",
-      "basePrice": 124500.0,
-      "currentPrice": 124500.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 123300.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "196170.KQ",
-      "fetchedAt": "2026-11-13T07:27:53.970921+00:00",
+      "fetchedAt": "2026-11-13T07:31:34.683143+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/196170.KQ",
-      "basePrice": 177400.0,
-      "currentPrice": 177400.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 176200.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "ABBV",
-      "fetchedAt": "2026-11-13T07:27:53.991306+00:00",
+      "fetchedAt": "2026-11-13T07:31:34.189630+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/ABBV",
-      "basePrice": 294.45,
-      "currentPrice": 294.45,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "083650.KQ",
-      "fetchedAt": "2026-11-13T07:27:54.014949+00:00",
+      "fetchedAt": "2026-11-13T07:31:34.557219+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/083650.KQ",
-      "basePrice": 37350.0,
-      "currentPrice": 37350.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 38300.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "SNDK",
-      "fetchedAt": "2026-11-13T07:27:54.020741+00:00",
+      "fetchedAt": "2026-11-13T07:31:34.564151+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/SNDK",
-      "basePrice": 937.46,
-      "currentPrice": 937.46,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "453340.KS",
-      "fetchedAt": "2026-11-13T07:27:54.026842+00:00",
+      "fetchedAt": "2026-11-13T07:31:34.892228+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/453340.KS",
-      "basePrice": 19570.0,
-      "currentPrice": 19570.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 20000.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "JOBY",
-      "fetchedAt": "2026-11-13T07:27:54.053474+00:00",
+      "fetchedAt": "2026-11-13T07:31:34.939355+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/JOBY",
-      "basePrice": 5.34,
-      "currentPrice": 5.34,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "RKLB",
-      "fetchedAt": "2026-11-13T07:27:54.068335+00:00",
+      "fetchedAt": "2026-11-13T07:31:34.972343+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/RKLB",
-      "basePrice": 64.07,
-      "currentPrice": 64.07,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "GILD",
-      "fetchedAt": "2026-11-13T07:27:54.077096+00:00",
+      "fetchedAt": "2026-11-13T07:31:35.108405+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GILD",
-      "basePrice": 167.95,
-      "currentPrice": 167.95,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "005930.KS",
-      "fetchedAt": "2026-11-13T07:27:54.090055+00:00",
+      "fetchedAt": "2026-11-13T07:31:35.301831+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/005930.KS",
-      "basePrice": 208000.0,
-      "currentPrice": 208000.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 206000.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "SNOW",
-      "fetchedAt": "2026-11-13T07:27:54.108191+00:00",
+      "fetchedAt": "2026-11-13T07:31:35.320287+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/SNOW",
-      "basePrice": 298.7,
-      "currentPrice": 298.7,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "ALB",
-      "fetchedAt": "2026-11-13T07:27:54.143481+00:00",
+      "fetchedAt": "2026-11-13T07:31:35.384716+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/ALB",
-      "basePrice": 94.85,
-      "currentPrice": 94.85,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "112610.KS",
-      "fetchedAt": "2026-11-13T07:27:54.139172+00:00",
+      "fetchedAt": "2026-11-13T07:31:35.504974+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/112610.KS",
-      "basePrice": 46750.0,
-      "currentPrice": 46750.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 46100.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "ETN",
-      "fetchedAt": "2026-11-13T07:27:54.166880+00:00",
+      "fetchedAt": "2026-11-13T07:31:36.498672+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/ETN",
-      "basePrice": 359.04,
-      "currentPrice": 359.04,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T21:00:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": null,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     },
     {
       "symbol": "144960.KQ",
-      "fetchedAt": "2026-11-13T07:27:54.164750+00:00",
+      "fetchedAt": "2026-11-13T07:31:36.474445+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/144960.KQ",
-      "basePrice": 13960.0,
-      "currentPrice": 13960.0,
-      "returnPct": 0.0,
-      "history": [
-        {
-          "date": "2026-11-12",
-          "returnPct": 0.0
-        }
-      ],
-      "asOf": "2026-11-12T06:30:00+00:00",
-      "status": "ok",
-      "message": "",
-      "priceDate": "2026-11-12",
-      "splitFactor": 1
+      "basePrice": 14220.0,
+      "currentPrice": null,
+      "returnPct": null,
+      "history": [],
+      "asOf": null,
+      "status": "pending",
+      "message": "매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률을 표시합니다"
     }
   ]
 }

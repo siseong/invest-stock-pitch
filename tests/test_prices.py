@@ -30,6 +30,19 @@ class ClosingPriceTests(unittest.TestCase):
         self.assertEqual(r['basePrice'], 100)
         self.assertEqual(r['splitFactor'], 2)
         self.assertAlmostEqual(r['returnPct'], 10)
+    def test_purchase_day_not_yet_in_daily_cutoff(self):
+        r = server.calculate(self.stock, '2026-11-12', self.chart([('2026-11-12', 100)]), '2026-11-11')
+        self.assertEqual(r['status'], 'pending')
+        self.assertEqual(r['basePrice'], 100)
+        self.assertIsNone(r['returnPct'])
+    def test_public_resource_has_counts_only(self):
+        data = server.resource()
+        self.assertEqual(data['purchaseDate'], '2026-11-13')
+        self.assertEqual(sum(s['selectionCount'] for s in data['stocks']), 41)
+        self.assertEqual(next(s for s in data['stocks'] if s['symbol']=='NVDA')['selectionCount'], 2)
+        for stock in data['stocks']:
+            self.assertNotIn('presenters', stock)
+            self.assertNotIn('sources', stock)
     def test_currency_mismatch(self):
         chart = self.chart([('2026-11-10', 100)])
         chart['meta']['currency'] = 'EUR'
