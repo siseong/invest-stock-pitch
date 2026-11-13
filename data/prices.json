@@ -2,11 +2,11 @@
   "purchaseDate": "2026-11-13",
   "asOfDate": "2026-11-12",
   "priceMode": "previous_close",
-  "updatedAt": "2026-11-13T07:32:38.932422+00:00",
+  "updatedAt": "2026-11-13T07:35:03.068677+00:00",
   "quotes": [
     {
       "symbol": "138930.KS",
-      "fetchedAt": "2026-11-13T07:32:37.689022+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.522258+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/138930.KS",
       "basePrice": 13630.0,
@@ -19,7 +19,7 @@
     },
     {
       "symbol": "000660.KS",
-      "fetchedAt": "2026-11-13T07:32:37.697371+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.871610+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/000660.KS",
       "basePrice": 1216000.0,
@@ -32,7 +32,7 @@
     },
     {
       "symbol": "IONQ",
-      "fetchedAt": "2026-11-13T07:32:37.696463+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.509057+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/IONQ",
       "basePrice": null,
@@ -45,7 +45,7 @@
     },
     {
       "symbol": "101160.KQ",
-      "fetchedAt": "2026-11-13T07:32:37.693522+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.514201+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/101160.KQ",
       "basePrice": 26850.0,
@@ -58,7 +58,7 @@
     },
     {
       "symbol": "357780.KQ",
-      "fetchedAt": "2026-11-13T07:32:37.822934+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.667387+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/357780.KQ",
       "basePrice": 296000.0,
@@ -71,7 +71,7 @@
     },
     {
       "symbol": "PANW",
-      "fetchedAt": "2026-11-13T07:32:37.823634+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.667808+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/PANW",
       "basePrice": null,
@@ -84,7 +84,7 @@
     },
     {
       "symbol": "105560.KS",
-      "fetchedAt": "2026-11-13T07:32:37.842087+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.692194+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/105560.KS",
       "basePrice": 159000.0,
@@ -97,7 +97,7 @@
     },
     {
       "symbol": "BYND",
-      "fetchedAt": "2026-11-13T07:32:37.829368+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.821454+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/BYND",
       "basePrice": null,
@@ -110,7 +110,7 @@
     },
     {
       "symbol": "MSTR",
-      "fetchedAt": "2026-11-13T07:32:37.953177+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.824626+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/MSTR",
       "basePrice": null,
@@ -123,7 +123,7 @@
     },
     {
       "symbol": "000270.KS",
-      "fetchedAt": "2026-11-13T07:32:37.975080+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.930460+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/000270.KS",
       "basePrice": 94600.0,
@@ -136,7 +136,7 @@
     },
     {
       "symbol": "LUNR",
-      "fetchedAt": "2026-11-13T07:32:37.958329+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.971459+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/LUNR",
       "basePrice": null,
@@ -149,7 +149,7 @@
     },
     {
       "symbol": "036540.KQ",
-      "fetchedAt": "2026-11-13T07:32:37.979690+00:00",
+      "fetchedAt": "2026-11-13T07:35:01.988607+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/036540.KQ",
       "basePrice": 9090.0,
@@ -162,7 +162,7 @@
     },
     {
       "symbol": "BRK-B",
-      "fetchedAt": "2026-11-13T07:32:38.086454+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.037952+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/BRK-B",
       "basePrice": null,
@@ -175,7 +175,7 @@
     },
     {
       "symbol": "078930.KS",
-      "fetchedAt": "2026-11-13T07:32:38.102755+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.098042+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/078930.KS",
       "basePrice": 84000.0,
@@ -188,7 +188,7 @@
     },
     {
       "symbol": "LLY",
-      "fetchedAt": "2026-11-13T07:32:38.133736+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.165859+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/LLY",
       "basePrice": null,
@@ -201,7 +201,7 @@
     },
     {
       "symbol": "CEG",
-      "fetchedAt": "2026-11-13T07:32:38.113857+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.153249+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/CEG",
       "basePrice": null,
@@ -214,7 +214,7 @@
     },
     {
       "symbol": "310210.KQ",
-      "fetchedAt": "2026-11-13T07:32:38.218809+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.186598+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/310210.KQ",
       "basePrice": 111000.0,
@@ -227,7 +227,7 @@
     },
     {
       "symbol": "353200.KS",
-      "fetchedAt": "2026-11-13T07:32:38.234157+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.262162+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/353200.KS",
       "basePrice": 91300.0,
@@ -240,7 +240,7 @@
     },
     {
       "symbol": "NVDA",
-      "fetchedAt": "2026-11-13T07:32:38.254084+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.321621+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/NVDA",
       "basePrice": null,
@@ -253,7 +253,7 @@
     },
     {
       "symbol": "011780.KS",
-      "fetchedAt": "2026-11-13T07:32:38.284311+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.346572+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/011780.KS",
       "basePrice": 97500.0,
@@ -266,7 +266,7 @@
     },
     {
       "symbol": "IREN",
-      "fetchedAt": "2026-11-13T07:32:38.351396+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.346398+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/IREN",
       "basePrice": null,
@@ -279,7 +279,7 @@
     },
     {
       "symbol": "GEV",
-      "fetchedAt": "2026-11-13T07:32:38.365683+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.421605+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GEV",
       "basePrice": null,
@@ -292,7 +292,7 @@
     },
     {
       "symbol": "032830.KS",
-      "fetchedAt": "2026-11-13T07:32:38.393692+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.481237+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/032830.KS",
       "basePrice": 252000.0,
@@ -305,7 +305,7 @@
     },
     {
       "symbol": "010120.KS",
-      "fetchedAt": "2026-11-13T07:32:38.431697+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.525059+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/010120.KS",
       "basePrice": 123300.0,
@@ -318,7 +318,7 @@
     },
     {
       "symbol": "196170.KQ",
-      "fetchedAt": "2026-11-13T07:32:38.488442+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.507011+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/196170.KQ",
       "basePrice": 176200.0,
@@ -331,7 +331,7 @@
     },
     {
       "symbol": "ABBV",
-      "fetchedAt": "2026-11-13T07:32:38.505829+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.580558+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/ABBV",
       "basePrice": null,
@@ -344,7 +344,7 @@
     },
     {
       "symbol": "083650.KQ",
-      "fetchedAt": "2026-11-13T07:32:38.529755+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.641097+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/083650.KQ",
       "basePrice": 38300.0,
@@ -357,7 +357,7 @@
     },
     {
       "symbol": "SNDK",
-      "fetchedAt": "2026-11-13T07:32:38.572035+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.664203+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/SNDK",
       "basePrice": null,
@@ -370,7 +370,7 @@
     },
     {
       "symbol": "453340.KS",
-      "fetchedAt": "2026-11-13T07:32:38.623524+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.695883+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/453340.KS",
       "basePrice": 20000.0,
@@ -383,7 +383,7 @@
     },
     {
       "symbol": "JOBY",
-      "fetchedAt": "2026-11-13T07:32:38.649237+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.735974+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/JOBY",
       "basePrice": null,
@@ -396,7 +396,7 @@
     },
     {
       "symbol": "RKLB",
-      "fetchedAt": "2026-11-13T07:32:38.661176+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.793385+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/RKLB",
       "basePrice": null,
@@ -409,7 +409,7 @@
     },
     {
       "symbol": "GILD",
-      "fetchedAt": "2026-11-13T07:32:38.711570+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.828685+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GILD",
       "basePrice": null,
@@ -422,7 +422,7 @@
     },
     {
       "symbol": "005930.KS",
-      "fetchedAt": "2026-11-13T07:32:38.766429+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.866075+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/005930.KS",
       "basePrice": 206000.0,
@@ -435,7 +435,7 @@
     },
     {
       "symbol": "SNOW",
-      "fetchedAt": "2026-11-13T07:32:38.784788+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.893829+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/SNOW",
       "basePrice": null,
@@ -448,7 +448,7 @@
     },
     {
       "symbol": "ALB",
-      "fetchedAt": "2026-11-13T07:32:38.808746+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.962672+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/ALB",
       "basePrice": null,
@@ -461,7 +461,7 @@
     },
     {
       "symbol": "112610.KS",
-      "fetchedAt": "2026-11-13T07:32:38.865948+00:00",
+      "fetchedAt": "2026-11-13T07:35:02.991306+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/112610.KS",
       "basePrice": 46100.0,
@@ -474,7 +474,7 @@
     },
     {
       "symbol": "ETN",
-      "fetchedAt": "2026-11-13T07:32:38.932028+00:00",
+      "fetchedAt": "2026-11-13T07:35:03.068455+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/ETN",
       "basePrice": null,
@@ -487,7 +487,7 @@
     },
     {
       "symbol": "144960.KQ",
-      "fetchedAt": "2026-11-13T07:32:38.919271+00:00",
+      "fetchedAt": "2026-11-13T07:35:03.054805+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/144960.KQ",
       "basePrice": 14220.0,
