@@ -20,26 +20,28 @@ function render(){
 }
 function renderStatus(){const stale=allRows().filter(r=>r.status==='stale').length,missing=config.stocks.length-validRows().length;$('#refresh').disabled=!!refreshState.running;$('#status').className=`status ${stale||missing||refreshState.lastError?'warning':''}`;$('#status').textContent=refreshState.running?`시세를 확인하고 있습니다 · ${refreshState.completed} / ${refreshState.total} 종목` : refreshState.lastError?`갱신 실패 · ${refreshState.lastError}` : `${snapshot?.updatedAt?dateTime(snapshot.updatedAt)+' (KST) 수집':'가격 수집 대기'} · 현지 통화 기준 · 전일 종가 기준${snapshot?.asOfDate?' · 대상 '+snapshot.asOfDate:''}${allRows().some(r=>r.status==='pending')?' · 매수일 종가 확정 후 다음 오전 8시 갱신부터 수익률 표시':''}${stale?` · ${stale}개 종목은 이전 저장 가격`:''}${missing?` · ${missing}개 가격 미확인`:''}`;}
 function renderTable(){const rows=filtered();$('#result-count').textContent=rows.length;$('#visible-count').textContent=`${rows.length} / ${config.stocks.length} 종목`;$('#stock-rows').innerHTML=rows.length?rows.map((r,i)=>`<tr><td>${String(i+1).padStart(2,'0')}</td><td class="stock-name"><a href="https://finance.yahoo.com/quote/${encodeURIComponent(r.symbol)}/" target="_blank" rel="noreferrer">${esc(r.name)} ↗</a><small><span class="country">${r.market}</span><span class="ticker">${esc(r.symbol)}</span> · ${esc(r.sector)}</small></td><td>${r.selectionCount}명 선택</td><td class="number">${money(r.basePrice,r.currency)}</td><td class="number">${money(r.currentPrice,r.currency)}</td><td class="number"><span class="return-badge ${sign(r.returnPct)}">${r.status==='pending'?'대기':pct(r.returnPct)}</span></td><td class="asof ${r.status==='stale'?'stale':''}" title="${esc(r.message)}">${dateTime(r.asOf)}<small>${r.status==='stale'?'이전 저장 가격':r.status==='error'?'조회 실패':r.status==='pending'?'13일 종가 기준 갱신 대기':r.status==='unavailable'?'기준일 종가 없음':r.asOf?'종가 · KST':'확인 대기'}${r.splitFactor&&r.splitFactor!==1?' · 분할 반영':''}</small></td></tr>`).join(''):'<tr><td colspan="7" style="text-align:center;padding:45px">검색 결과가 없습니다.</td></tr>';}
-function series(){const selected=$('#chart-stock').value;if(selected!=='all')return allRows().find(x=>x.symbol===selected)?.history||[];return PitchChart.portfolioSeries(validRows());}
 const hiddenSeries = new Set();
 function comparisonLines(){
  const selected=$('#chart-stock').value;
  const selectedRow=selected==='all'?null:allRows().find(r=>r.symbol===selected);
- const mainPoints=series();
- const main={id:'portfolio',name:selected==='all'?'동일 비중 포트폴리오':selectedRow?.name||'선택 종목',color:'#176e55',points:mainPoints,returnPct:mainPoints.at(-1)?.returnPct,status:selected==='all'?(mainPoints.length?'ok':'pending'):selectedRow?.status,asOf:selectedRow?.asOf};
+ const rows=validRows();
+ function portfolio(id,name,color,weighting){const points=PitchChart.portfolioSeries(rows,weighting);return{id,name,color,points,returnPct:points.at(-1)?.returnPct,status:points.length?'ok':'pending'};}
+ const portfolios=[portfolio('portfolio','종목별 동일 비중','#176e55','equal'),portfolio('selection-weighted','선택 인원수 비례','#ba7331','selection')];
+ if(selectedRow)portfolios.push({id:'selected-stock',name:selectedRow.name,color:'#50687c',points:selectedRow.history||[],returnPct:selectedRow.returnPct,status:selectedRow.status,asOf:selectedRow.asOf});
  const quotes=new Map((snapshot?.benchmarks||[]).map(r=>[r.symbol,r]));
- return [main,...(config.benchmarks||[]).map(b=>{const q=quotes.get(b.symbol);return{id:b.symbol,name:b.name,color:b.color,benchmark:true,points:q?.history||[],returnPct:q?.returnPct,status:q?.status||'pending',asOf:q?.asOf,message:q?.message};})];
+ return [...portfolios,...(config.benchmarks||[]).map(b=>{const q=quotes.get(b.symbol);return{id:b.symbol,name:b.name,color:b.color,benchmark:true,points:q?.history||[],returnPct:q?.returnPct,status:q?.status||'pending',asOf:q?.asOf,message:q?.message};})];
 }
 function renderChart(){
  const selected=$('#chart-stock').value,allLines=comparisonLines();
- $('#chart-title').textContent=selected==='all'?'같은 비중으로 담았다면':config.stocks.find(s=>s.symbol===selected)?.name||'종목 수익률';
+ $('#chart-title').textContent='우리의 선택, 두 가지 투자 방식';
  $('#chart-legend').innerHTML=allLines.map(line=>`<label class="legend-item ${line.benchmark?'benchmark':''} ${hiddenSeries.has(line.id)?'off':''}" style="--series-color:${esc(line.color)}" title="${esc(line.status==='stale'?'이전 저장 종가 · '+dateTime(line.asOf):line.message||'11/13 종가 대비 수익률')}"><input type="checkbox" data-series="${esc(line.id)}" aria-label="${esc(line.name)} 표시" ${hiddenSeries.has(line.id)?'':'checked'}><i></i><span>${esc(line.name)}</span>${Number.isFinite(line.returnPct)?`<strong>${pct(line.returnPct)}${line.status==='stale'?' *':''}</strong>`:`<span class="legend-pending">${line.status==='error'||line.status==='unavailable'?'미확인':'대기'}</span>`}</label>`).join('');
  const active=allLines.filter(line=>!hiddenSeries.has(line.id)&&line.points.length);
  const {dates,lines}=PitchChart.alignSeries(active);
  const purchase=config.purchaseDate.slice(5).replace('-','/');
+ const covered=validRows(),totalSelections=config.stocks.reduce((sum,r)=>sum+r.selectionCount,0),coveredSelections=covered.reduce((sum,r)=>sum+r.selectionCount,0);
  const unavailable=allLines.filter(line=>line.benchmark&&(!line.points.length||line.status==='stale'));
- $('#chart-note').textContent=`${purchase} 각 시장 종가 = 0% · 휴장일은 직전 값을 유지 · 지수는 종목 평균·순위에서 제외${unavailable.length?' · '+unavailable.map(line=>line.name+(line.status==='stale'?' 이전 저장값':' 데이터 대기')).join(', '):''}`;
- if(!dates.length){$('#chart').innerHTML=`<div class="empty">${active.length?'표시할 지표를 선택해 주세요.':allLines.some(line=>line.points.length)?'위 범례에서 표시할 지표를 선택해 주세요.':'매수일 종가 확정 후 포트폴리오와 주요 지수를 함께 표시합니다.'}</div>`;return;}
+ $('#chart-note').textContent=`${purchase} 종가에 매수 후 보유 · 동일 비중: 종목당 1/${config.stocks.length} · 인원수 비례: 선택 수/${totalSelections}${covered.length<config.stocks.length?' · 현재 '+covered.length+'종목·'+coveredSelections+'/'+totalSelections+'명 반영, 확인 종목끼리 비중 재계산':''} · 휴장일은 직전 값 유지 · 지수는 투자 비중에서 제외${unavailable.length?' · '+unavailable.map(line=>line.name+(line.status==='stale'?' 이전 저장값':' 데이터 대기')).join(', '):''}`;
+ if(!dates.length){$('#chart').innerHTML=`<div class="empty">${active.length?'표시할 지표를 선택해 주세요.':allLines.some(line=>line.points.length)?'위 범례에서 표시할 지표를 선택해 주세요.':'매수일 종가 확정 후 두 투자 방식과 주요 지수를 함께 표시합니다.'}</div>`;return;}
  const w=650,h=250,l=57,r=20,t=22,b=35;
  const values=lines.flatMap(line=>line.points.map(p=>p.returnPct)).filter(Number.isFinite);
  let min=Math.min(0,...values),max=Math.max(0,...values);

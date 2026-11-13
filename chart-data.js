@@ -1,13 +1,15 @@
 /* Chart calculations shared by the browser and dependency-free Node tests. */
 (function (root) {
   'use strict';
-  function portfolioSeries(rows) {
-    const valid = rows.filter(r => Number.isFinite(r.returnPct) && r.history?.length);
+  function portfolioSeries(rows, weighting = 'equal') {
+    const weight = row => weighting === 'selection' ? row.selectionCount : 1;
+    const valid = rows.filter(r => Number.isFinite(r.returnPct) && r.history?.length && Number.isFinite(weight(r)) && weight(r) > 0);
     if (!valid.length) return [];
     const dates = [...new Set(valid.flatMap(r => r.history.map(p => p.date)))].sort();
     return dates.map(date => {
-      const returns = valid.map(r => r.history.filter(p => p.date <= date).at(-1)?.returnPct).filter(Number.isFinite);
-      return { date, returnPct: returns.reduce((a, b) => a + b, 0) / returns.length };
+      const returns = valid.map(r => ({value: r.history.filter(p => p.date <= date).at(-1)?.returnPct, weight: weight(r)})).filter(p => Number.isFinite(p.value));
+      const totalWeight = returns.reduce((sum, p) => sum + p.weight, 0);
+      return { date, returnPct: totalWeight ? returns.reduce((sum, p) => sum + p.value * p.weight, 0) / totalWeight : null };
     });
   }
   function alignSeries(lines) {
