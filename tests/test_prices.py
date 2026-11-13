@@ -1,4 +1,7 @@
 import unittest
+import json
+import tempfile
+from pathlib import Path
 from unittest.mock import patch
 from datetime import datetime, timezone
 import server
@@ -43,6 +46,15 @@ class ClosingPriceTests(unittest.TestCase):
         for stock in data['stocks']:
             self.assertNotIn('presenters', stock)
             self.assertNotIn('sources', stock)
+    def test_refresh_keeps_benchmarks_out_of_stock_rows(self):
+        config = {'purchaseDate': '2026-11-13', 'stocks': [self.stock], 'benchmarks': [{'symbol':'^GSPC','market':'US','currency':'USD'}]}
+        def fake_fetch(asset, *args):
+            return {'symbol':asset['symbol'], 'status':'pending', 'returnPct':None, 'history':[]}
+        with tempfile.TemporaryDirectory() as temp, patch.object(server,'resource',return_value=config), patch.object(server,'fetch_stock',side_effect=fake_fetch), patch.object(server,'CACHE',Path(temp)/'prices.json'), patch.object(server,'SNAPSHOT',None):
+            server.refresh('2026-11-12')
+            data = json.loads((Path(temp)/'prices.json').read_text())
+            self.assertEqual([r['symbol'] for r in data['quotes']], ['TEST'])
+            self.assertEqual([r['symbol'] for r in data['benchmarks']], ['^GSPC'])
     def test_currency_mismatch(self):
         chart = self.chart([('2026-11-10', 100)])
         chart['meta']['currency'] = 'EUR'

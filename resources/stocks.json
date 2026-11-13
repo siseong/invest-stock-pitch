@@ -308,5 +308,35 @@
       "sector": "반도체",
       "selectionCount": 1
     }
+  ],
+  "benchmarks": [
+    {
+      "name": "KOSPI",
+      "symbol": "^KS11",
+      "market": "KR",
+      "currency": "KRW",
+      "color": "#d18a30"
+    },
+    {
+      "name": "KOSDAQ",
+      "symbol": "^KQ11",
+      "market": "KR",
+      "currency": "KRW",
+      "color": "#4387ae"
+    },
+    {
+      "name": "S&P 500",
+      "symbol": "^GSPC",
+      "market": "US",
+      "currency": "USD",
+      "color": "#8b6baa"
+    },
+    {
+      "name": "NASDAQ 종합",
+      "symbol": "^IXIC",
+      "market": "US",
+      "currency": "USD",
+      "color": "#b86571"
+    }
   ]
 }

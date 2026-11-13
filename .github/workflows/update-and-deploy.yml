@@ -26,6 +26,8 @@ jobs:
           python-version: '3.12'
       - name: Check return calculation
         run: python -m unittest discover -s tests -v
+      - name: Check comparison chart calculations
+        run: node --test tests/chart-data.test.cjs
       - name: Update previous closing prices
         run: python server.py --refresh
       - name: Save data snapshot
@@ -40,7 +42,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site/resources _site/data
-          cp index.html app.js style.css _site/
+          cp index.html app.js chart-data.js style.css _site/
           cp resources/stocks.json _site/resources/
           cp data/prices.json _site/data/
           touch _site/.nojekyll

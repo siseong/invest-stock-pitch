@@ -104,12 +104,14 @@ def refresh(as_of_date=None):
     try:
         config = resource()
         as_of_date = as_of_date or cutoff_date()
-        old = {r['symbol']: r for r in (SNAPSHOT or {}).get('quotes', []) if r.get('priceDate') and r['priceDate'] <= as_of_date} if (SNAPSHOT or {}).get('purchaseDate') == config['purchaseDate'] and (SNAPSHOT or {}).get('priceMode') == 'previous_close' else {}
+        assets = config['stocks'] + config.get('benchmarks', [])
+        saved_rows = (SNAPSHOT or {}).get('quotes', []) + (SNAPSHOT or {}).get('benchmarks', [])
+        old = {r['symbol']: r for r in saved_rows if r.get('priceDate') and r['priceDate'] <= as_of_date} if (SNAPSHOT or {}).get('purchaseDate') == config['purchaseDate'] and (SNAPSHOT or {}).get('priceMode') == 'previous_close' else {}
         rows = []
         with LOCK:
-            STATE.update(completed=0, total=len(config['stocks']), lastError=None)
+            STATE.update(completed=0, total=len(assets), lastError=None)
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-            jobs = {pool.submit(fetch_stock, s, config['purchaseDate'], as_of_date): s for s in config['stocks']}
+            jobs = {pool.submit(fetch_stock, s, config['purchaseDate'], as_of_date): s for s in assets}
             for future in concurrent.futures.as_completed(jobs):
                 stock = jobs[future]
                 try:
@@ -120,11 +122,14 @@ def refresh(as_of_date=None):
                 rows.append(row)
                 with LOCK:
                     STATE['completed'] += 1
-        order = {s['symbol']: i for i, s in enumerate(config['stocks'])}
+        order = {s['symbol']: i for i, s in enumerate(assets)}
         rows.sort(key=lambda row: order[row['symbol']])
-        if not any(r.get('status') in ('ok', 'pending') for r in rows):
+        stock_symbols = {s['symbol'] for s in config['stocks']}
+        stock_rows = [r for r in rows if r['symbol'] in stock_symbols]
+        benchmarks = [r for r in rows if r['symbol'] not in stock_symbols]
+        if not any(r.get('status') in ('ok', 'pending') for r in stock_rows):
             raise ValueError('全 종목 조회 실패: 기존 가격 파일을 유지합니다')
-        result = {'purchaseDate': config['purchaseDate'], 'asOfDate': as_of_date, 'priceMode': 'previous_close', 'updatedAt': utcnow(), 'quotes': rows}
+        result = {'purchaseDate': config['purchaseDate'], 'asOfDate': as_of_date, 'priceMode': 'previous_close', 'updatedAt': utcnow(), 'quotes': stock_rows, 'benchmarks': benchmarks}
         CACHE.parent.mkdir(exist_ok=True)
         temp = CACHE.with_suffix('.tmp')
         temp.write_text(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False) + '\n')
@@ -142,7 +147,8 @@ def start_refresh():
     with LOCK:
         if STATE['running']:
             return False
-        STATE.update(running=True, completed=0, total=len(resource()['stocks']))
+        config = resource()
+        STATE.update(running=True, completed=0, total=len(config['stocks']) + len(config.get('benchmarks', [])))
     threading.Thread(target=refresh, daemon=True).start()
     return True
 
@@ -163,7 +169,7 @@ class Handler(SimpleHTTPRequestHandler):
                 self.json_response({'snapshot': SNAPSHOT, 'refresh': dict(STATE)})
         elif path == '/api/resource':
             self.json_response(resource())
-        elif path in ['/', '/index.html', '/style.css', '/app.js', '/resources/stocks.json', '/data/prices.json']:
+        elif path in ['/', '/index.html', '/style.css', '/app.js', '/chart-data.js', '/resources/stocks.json', '/data/prices.json']:
             super().do_GET()
         else:
             self.send_error(404)
