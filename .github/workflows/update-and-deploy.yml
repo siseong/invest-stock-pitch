@@ -1,0 +1,63 @@
+name: Update closing prices and deploy Pages
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 23:00 UTC = next day 08:00 Asia/Seoul
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: stock-pitch-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Check return calculation
+        run: python -m unittest discover -s tests -v
+      - name: Update previous closing prices
+        run: python server.py --refresh
+      - name: Save data snapshot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/prices.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: update previous closing prices'
+            git push origin HEAD:main
+          fi
+      - name: Prepare static site
+        run: |
+          mkdir -p _site/resources _site/data
+          cp index.html app.js style.css _site/
+          cp resources/stocks.json _site/resources/
+          cp data/prices.json _site/data/
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
