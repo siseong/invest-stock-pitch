@@ -1,17 +1,17 @@
 {
   "purchaseDate": "2026-11-13",
-  "asOfDate": "2026-11-16",
+  "asOfDate": "2026-11-17",
   "priceMode": "previous_close",
-  "updatedAt": "2026-11-17T04:54:28.787528+00:00",
+  "updatedAt": "2026-11-18T03:58:29.327922+00:00",
   "quotes": [
     {
       "symbol": "138930.KS",
-      "fetchedAt": "2026-11-17T04:54:27.896057+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.692042+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/138930.KS",
       "basePrice": 13630.0,
-      "currentPrice": 13630.0,
-      "returnPct": 0.0,
+      "currentPrice": 13400.0,
+      "returnPct": -1.6874541452677971,
       "history": [
         {
           "date": "2026-11-13",
@@ -20,22 +20,26 @@
         {
           "date": "2026-11-16",
           "returnPct": 0.0
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -1.6874541452677971
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "000660.KS",
-      "fetchedAt": "2026-11-17T04:54:27.863573+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.688894+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/000660.KS",
       "basePrice": 1216000.0,
-      "currentPrice": 1120000.0,
-      "returnPct": -7.8947368421052655,
+      "currentPrice": 1098000.0,
+      "returnPct": -9.703947368421051,
       "history": [
         {
           "date": "2026-11-13",
@@ -44,22 +48,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -7.8947368421052655
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -9.703947368421051
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "IONQ",
-      "fetchedAt": "2026-11-17T04:54:27.849628+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.668491+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/IONQ",
       "basePrice": 28.88,
-      "currentPrice": 26.45,
-      "returnPct": -8.414127423822714,
+      "currentPrice": 24.84,
+      "returnPct": -13.988919667590027,
       "history": [
         {
           "date": "2026-11-13",
@@ -68,22 +76,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -8.414127423822714
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -13.988919667590027
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "101160.KQ",
-      "fetchedAt": "2026-11-17T04:54:27.854377+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.688526+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/101160.KQ",
       "basePrice": 26850.0,
-      "currentPrice": 25750.0,
-      "returnPct": -4.096834264432026,
+      "currentPrice": 25300.0,
+      "returnPct": -5.772811918063314,
       "history": [
         {
           "date": "2026-11-13",
@@ -92,22 +104,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -4.096834264432026
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -5.772811918063314
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "357780.KQ",
-      "fetchedAt": "2026-11-17T04:54:27.932696+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.730023+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/357780.KQ",
       "basePrice": 296000.0,
-      "currentPrice": 283000.0,
-      "returnPct": -4.3918918918918965,
+      "currentPrice": 248500.0,
+      "returnPct": -16.047297297297302,
       "history": [
         {
           "date": "2026-11-13",
@@ -116,22 +132,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -4.3918918918918965
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -16.047297297297302
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "PANW",
-      "fetchedAt": "2026-11-17T04:54:27.972946+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.741316+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/PANW",
       "basePrice": 322.24,
-      "currentPrice": 316.09,
-      "returnPct": -1.9085153922542286,
+      "currentPrice": 309.29,
+      "returnPct": -4.0187437934458785,
       "history": [
         {
           "date": "2026-11-13",
@@ -140,22 +160,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -1.9085153922542286
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -4.0187437934458785
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "105560.KS",
-      "fetchedAt": "2026-11-17T04:54:27.955474+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.749755+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/105560.KS",
       "basePrice": 159000.0,
-      "currentPrice": 161600.0,
-      "returnPct": 1.6352201257861632,
+      "currentPrice": 156800.0,
+      "returnPct": -1.383647798742138,
       "history": [
         {
           "date": "2026-11-13",
@@ -164,22 +188,26 @@
         {
           "date": "2026-11-16",
           "returnPct": 1.6352201257861632
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -1.383647798742138
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "BYND",
-      "fetchedAt": "2026-11-17T04:54:28.009158+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.763705+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/BYND",
       "basePrice": 5.38,
-      "currentPrice": 4.95,
-      "returnPct": -7.99256505576208,
+      "currentPrice": 4.7,
+      "returnPct": -12.639405204460964,
       "history": [
         {
           "date": "2026-11-13",
@@ -188,22 +216,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -7.99256505576208
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -12.639405204460964
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "MSTR",
-      "fetchedAt": "2026-11-17T04:54:28.013516+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.780436+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/MSTR",
       "basePrice": 111.62,
-      "currentPrice": 103.03,
-      "returnPct": -7.695753449202658,
+      "currentPrice": 96.5,
+      "returnPct": -13.545959505464978,
       "history": [
         {
           "date": "2026-11-13",
@@ -212,22 +244,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -7.695753449202658
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -13.545959505464978
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "000270.KS",
-      "fetchedAt": "2026-11-17T04:54:28.042637+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.809651+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/000270.KS",
       "basePrice": 94600.0,
-      "currentPrice": 95000.0,
-      "returnPct": 0.42283298097252064,
+      "currentPrice": 92100.0,
+      "returnPct": -2.6427061310782207,
       "history": [
         {
           "date": "2026-11-13",
@@ -236,22 +272,26 @@
         {
           "date": "2026-11-16",
           "returnPct": 0.42283298097252064
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -2.6427061310782207
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "LUNR",
-      "fetchedAt": "2026-11-17T04:54:28.075732+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.797896+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/LUNR",
       "basePrice": 13.0,
-      "currentPrice": 11.73,
-      "returnPct": -9.769230769230763,
+      "currentPrice": 11.05,
+      "returnPct": -14.999999999999991,
       "history": [
         {
           "date": "2026-11-13",
@@ -260,22 +300,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -9.769230769230763
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -14.999999999999991
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "036540.KQ",
-      "fetchedAt": "2026-11-17T04:54:28.107151+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.827318+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/036540.KQ",
       "basePrice": 9090.0,
-      "currentPrice": 8230.0,
-      "returnPct": -9.460946094609458,
+      "currentPrice": 8070.0,
+      "returnPct": -11.221122112211223,
       "history": [
         {
           "date": "2026-11-13",
@@ -284,22 +328,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -9.460946094609458
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -11.221122112211223
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "BRK-B",
-      "fetchedAt": "2026-11-17T04:54:28.100549+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.838671+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/BRK-B",
       "basePrice": 592.94,
-      "currentPrice": 592.85,
-      "returnPct": -0.015178601544851844,
+      "currentPrice": 586.76,
+      "returnPct": -1.0422639727459937,
       "history": [
         {
           "date": "2026-11-13",
@@ -308,22 +356,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -0.015178601544851844
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -1.0422639727459937
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "078930.KS",
-      "fetchedAt": "2026-11-17T04:54:28.187404+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.865058+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/078930.KS",
       "basePrice": 84000.0,
-      "currentPrice": 83200.0,
-      "returnPct": -0.952380952380949,
+      "currentPrice": 82400.0,
+      "returnPct": -1.904761904761909,
       "history": [
         {
           "date": "2026-11-13",
@@ -332,22 +384,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -0.952380952380949
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -1.904761904761909
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "LLY",
-      "fetchedAt": "2026-11-17T04:54:28.187193+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.898636+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/LLY",
       "basePrice": 1443.5,
-      "currentPrice": 1431.67,
-      "returnPct": -0.8195358503636951,
+      "currentPrice": 1415.55,
+      "returnPct": -1.9362660200900605,
       "history": [
         {
           "date": "2026-11-13",
@@ -356,22 +412,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -0.8195358503636951
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -1.9362660200900605
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "CEG",
-      "fetchedAt": "2026-11-17T04:54:28.196139+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.894299+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/CEG",
       "basePrice": 280.2,
-      "currentPrice": 277.82,
-      "returnPct": -0.8493932905067836,
+      "currentPrice": 268.07,
+      "returnPct": -4.329050678087077,
       "history": [
         {
           "date": "2026-11-13",
@@ -380,22 +440,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -0.8493932905067836
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -4.329050678087077
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "310210.KQ",
-      "fetchedAt": "2026-11-17T04:54:28.182141+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.925152+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/310210.KQ",
       "basePrice": 111000.0,
-      "currentPrice": 101000.0,
-      "returnPct": -9.009009009009006,
+      "currentPrice": 101100.0,
+      "returnPct": -8.918918918918916,
       "history": [
         {
           "date": "2026-11-13",
@@ -404,22 +468,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -9.009009009009006
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -8.918918918918916
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "353200.KS",
-      "fetchedAt": "2026-11-17T04:54:28.264011+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.933290+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/353200.KS",
       "basePrice": 91300.0,
-      "currentPrice": 82600.0,
-      "returnPct": -9.5290251916758,
+      "currentPrice": 80700.0,
+      "returnPct": -11.610076670317637,
       "history": [
         {
           "date": "2026-11-13",
@@ -428,22 +496,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -9.5290251916758
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -11.610076670317637
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "NVDA",
-      "fetchedAt": "2026-11-17T04:54:28.276564+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.974334+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/NVDA",
       "basePrice": 162.85,
-      "currentPrice": 156.14,
-      "returnPct": -4.120356155971761,
+      "currentPrice": 155.46,
+      "returnPct": -4.5379183297513,
       "history": [
         {
           "date": "2026-11-13",
@@ -452,22 +524,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -4.120356155971761
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -4.5379183297513
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "011780.KS",
-      "fetchedAt": "2026-11-17T04:54:28.282117+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.978769+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/011780.KS",
       "basePrice": 97500.0,
-      "currentPrice": 97200.0,
-      "returnPct": -0.3076923076923088,
+      "currentPrice": 95300.0,
+      "returnPct": -2.2564102564102573,
       "history": [
         {
           "date": "2026-11-13",
@@ -476,22 +552,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -0.3076923076923088
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -2.2564102564102573
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "IREN",
-      "fetchedAt": "2026-11-17T04:54:28.273830+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.973719+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/IREN",
       "basePrice": 18.17,
-      "currentPrice": 16.39,
-      "returnPct": -9.79636763896533,
+      "currentPrice": 15.81,
+      "returnPct": -12.988442487616958,
       "history": [
         {
           "date": "2026-11-13",
@@ -500,22 +580,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -9.79636763896533
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -12.988442487616958
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "GEV",
-      "fetchedAt": "2026-11-17T04:54:28.344963+00:00",
+      "fetchedAt": "2026-11-18T03:58:28.985346+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GEV",
       "basePrice": 803.13,
-      "currentPrice": 763.57,
-      "returnPct": -4.925728088852354,
+      "currentPrice": 779.91,
+      "returnPct": -2.891188226065522,
       "history": [
         {
           "date": "2026-11-13",
@@ -524,22 +608,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -4.925728088852354
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -2.891188226065522
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "032830.KS",
-      "fetchedAt": "2026-11-17T04:54:28.403468+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.036997+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/032830.KS",
       "basePrice": 252000.0,
-      "currentPrice": 253500.0,
-      "returnPct": 0.5952380952380931,
+      "currentPrice": 242000.0,
+      "returnPct": -3.9682539682539653,
       "history": [
         {
           "date": "2026-11-13",
@@ -548,22 +636,26 @@
         {
           "date": "2026-11-16",
           "returnPct": 0.5952380952380931
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -3.9682539682539653
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "010120.KS",
-      "fetchedAt": "2026-11-17T04:54:28.374029+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.045884+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/010120.KS",
       "basePrice": 123300.0,
-      "currentPrice": 118600.0,
-      "returnPct": -3.811841038118413,
+      "currentPrice": 113600.0,
+      "returnPct": -7.8669910786699155,
       "history": [
         {
           "date": "2026-11-13",
@@ -572,22 +664,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -3.811841038118413
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -7.8669910786699155
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "196170.KQ",
-      "fetchedAt": "2026-11-17T04:54:28.354038+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.033269+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/196170.KQ",
       "basePrice": 176200.0,
-      "currentPrice": 171700.0,
-      "returnPct": -2.553916004540291,
+      "currentPrice": 173000.0,
+      "returnPct": -1.8161180476730987,
       "history": [
         {
           "date": "2026-11-13",
@@ -596,22 +692,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -2.553916004540291
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -1.8161180476730987
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "ABBV",
-      "fetchedAt": "2026-11-17T04:54:28.430756+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.048307+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/ABBV",
       "basePrice": 295.03,
-      "currentPrice": 294.55,
-      "returnPct": -0.1626953191200764,
+      "currentPrice": 292.82,
+      "returnPct": -0.7490763651154086,
       "history": [
         {
           "date": "2026-11-13",
@@ -620,22 +720,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -0.1626953191200764
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -0.7490763651154086
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "083650.KQ",
-      "fetchedAt": "2026-11-17T04:54:28.444685+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.092064+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/083650.KQ",
       "basePrice": 38300.0,
-      "currentPrice": 36450.0,
-      "returnPct": -4.8302872062663145,
+      "currentPrice": 35300.0,
+      "returnPct": -7.8328981723237545,
       "history": [
         {
           "date": "2026-11-13",
@@ -644,22 +748,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -4.8302872062663145
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -7.8328981723237545
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "SNDK",
-      "fetchedAt": "2026-11-17T04:54:28.457665+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.099241+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/SNDK",
       "basePrice": 885.01,
-      "currentPrice": 809.11,
-      "returnPct": -8.576174280516602,
+      "currentPrice": 797.24,
+      "returnPct": -9.917402063253522,
       "history": [
         {
           "date": "2026-11-13",
@@ -668,22 +776,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -8.576174280516602
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -9.917402063253522
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "453340.KS",
-      "fetchedAt": "2026-11-17T04:54:28.480002+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.115947+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/453340.KS",
       "basePrice": 20000.0,
-      "currentPrice": 20100.0,
-      "returnPct": 0.49999999999998934,
+      "currentPrice": 20600.0,
+      "returnPct": 3.0000000000000027,
       "history": [
         {
           "date": "2026-11-13",
@@ -692,22 +804,26 @@
         {
           "date": "2026-11-16",
           "returnPct": 0.49999999999998934
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": 3.0000000000000027
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "JOBY",
-      "fetchedAt": "2026-11-17T04:54:28.509019+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.141651+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/JOBY",
       "basePrice": 5.08,
-      "currentPrice": 4.72,
-      "returnPct": -7.086614173228356,
+      "currentPrice": 4.38,
+      "returnPct": -13.779527559055127,
       "history": [
         {
           "date": "2026-11-13",
@@ -716,22 +832,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -7.086614173228356
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -13.779527559055127
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "RKLB",
-      "fetchedAt": "2026-11-17T04:54:28.535637+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.144248+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/RKLB",
       "basePrice": 61.53,
-      "currentPrice": 57.37,
-      "returnPct": -6.760929627823831,
+      "currentPrice": 55.05,
+      "returnPct": -10.531448074110195,
       "history": [
         {
           "date": "2026-11-13",
@@ -740,22 +860,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -6.760929627823831
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -10.531448074110195
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "GILD",
-      "fetchedAt": "2026-11-17T04:54:28.552912+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.160577+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/GILD",
       "basePrice": 168.08,
-      "currentPrice": 167.58,
-      "returnPct": -0.29747739171822607,
+      "currentPrice": 170.26,
+      "returnPct": 1.2970014278914643,
       "history": [
         {
           "date": "2026-11-13",
@@ -764,22 +888,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -0.29747739171822607
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": 1.2970014278914643
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "005930.KS",
-      "fetchedAt": "2026-11-17T04:54:28.576976+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.181124+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/005930.KS",
       "basePrice": 206000.0,
-      "currentPrice": 196800.0,
-      "returnPct": -4.466019417475731,
+      "currentPrice": 190300.0,
+      "returnPct": -7.621359223300972,
       "history": [
         {
           "date": "2026-11-13",
@@ -788,22 +916,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -4.466019417475731
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -7.621359223300972
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "SNOW",
-      "fetchedAt": "2026-11-17T04:54:28.589140+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.195714+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/SNOW",
       "basePrice": 291.0,
-      "currentPrice": 280.54,
-      "returnPct": -3.59450171821305,
+      "currentPrice": 272.94,
+      "returnPct": -6.206185567010314,
       "history": [
         {
           "date": "2026-11-13",
@@ -812,22 +944,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -3.59450171821305
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -6.206185567010314
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "ALB",
-      "fetchedAt": "2026-11-17T04:54:28.635221+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.217347+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/ALB",
       "basePrice": 93.53,
-      "currentPrice": 88.16,
-      "returnPct": -5.741473324067147,
+      "currentPrice": 87.67,
+      "returnPct": -6.265369400192455,
       "history": [
         {
           "date": "2026-11-13",
@@ -836,22 +972,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -5.741473324067147
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -6.265369400192455
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "112610.KS",
-      "fetchedAt": "2026-11-17T04:54:28.630115+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.230060+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/112610.KS",
       "basePrice": 46100.0,
-      "currentPrice": 42100.0,
-      "returnPct": -8.676789587852497,
+      "currentPrice": 41300.0,
+      "returnPct": -10.412147505422997,
       "history": [
         {
           "date": "2026-11-13",
@@ -860,22 +1000,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -8.676789587852497
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -10.412147505422997
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "ETN",
-      "fetchedAt": "2026-11-17T04:54:28.688909+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.276474+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/ETN",
       "basePrice": 352.97,
-      "currentPrice": 336.88,
-      "returnPct": -4.558461059013519,
+      "currentPrice": 337.11,
+      "returnPct": -4.493299713856702,
       "history": [
         {
           "date": "2026-11-13",
@@ -884,22 +1028,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -4.558461059013519
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -4.493299713856702
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "144960.KQ",
-      "fetchedAt": "2026-11-17T04:54:28.699420+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.291308+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/144960.KQ",
       "basePrice": 14220.0,
-      "currentPrice": 11710.0,
-      "returnPct": -17.65119549929677,
+      "currentPrice": 10920.0,
+      "returnPct": -23.206751054852326,
       "history": [
         {
           "date": "2026-11-13",
@@ -908,24 +1056,28 @@
         {
           "date": "2026-11-16",
           "returnPct": -17.65119549929677
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -23.206751054852326
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     }
   ],
   "benchmarks": [
     {
       "symbol": "^KS11",
-      "fetchedAt": "2026-11-17T04:54:28.708232+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.268270+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EKS11",
       "basePrice": 5290.53,
-      "currentPrice": 5100.5,
-      "returnPct": -3.5918896594481,
+      "currentPrice": 4968.48,
+      "returnPct": -6.087291821424323,
       "history": [
         {
           "date": "2026-11-13",
@@ -934,22 +1086,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -3.5918896594481
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -6.087291821424323
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "^KQ11",
-      "fetchedAt": "2026-11-17T04:54:28.719229+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.280884+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EKQ11",
       "basePrice": 699.66,
-      "currentPrice": 665.65,
-      "returnPct": -4.860932452905697,
+      "currentPrice": 650.06,
+      "returnPct": -7.089157590829831,
       "history": [
         {
           "date": "2026-11-13",
@@ -958,22 +1114,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -4.860932452905697
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -7.089157590829831
         }
       ],
-      "asOf": "2026-11-16T06:30:00+00:00",
+      "asOf": "2026-11-17T06:30:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "^GSPC",
-      "fetchedAt": "2026-11-17T04:54:28.769797+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.319978+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EGSPC",
       "basePrice": 7561.67,
-      "currentPrice": 7416.59,
-      "returnPct": -1.91862379606621,
+      "currentPrice": 7340.53,
+      "returnPct": -2.924486257665304,
       "history": [
         {
           "date": "2026-11-13",
@@ -982,22 +1142,26 @@
         {
           "date": "2026-11-16",
           "returnPct": -1.91862379606621
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -2.924486257665304
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     },
     {
       "symbol": "^IXIC",
-      "fetchedAt": "2026-11-17T04:54:28.787204+00:00",
+      "fetchedAt": "2026-11-18T03:58:29.327416+00:00",
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EIXIC",
       "basePrice": 25136.27,
-      "currentPrice": 24509.76,
-      "returnPct": -2.4924541310226256,
+      "currentPrice": 24328.38,
+      "returnPct": -3.2140409058304953,
       "history": [
         {
           "date": "2026-11-13",
@@ -1006,12 +1170,16 @@
         {
           "date": "2026-11-16",
           "returnPct": -2.4924541310226256
+        },
+        {
+          "date": "2026-11-17",
+          "returnPct": -3.2140409058304953
         }
       ],
-      "asOf": "2026-11-16T21:00:00+00:00",
+      "asOf": "2026-11-17T21:00:00+00:00",
       "status": "ok",
       "message": "",
-      "priceDate": "2026-11-16",
+      "priceDate": "2026-11-17",
       "splitFactor": 1
     }
   ]
