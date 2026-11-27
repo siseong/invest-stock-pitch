@@ -55,6 +55,28 @@ class ClosingPriceTests(unittest.TestCase):
             data = json.loads((Path(temp)/'prices.json').read_text())
             self.assertEqual([r['symbol'] for r in data['quotes']], ['TEST'])
             self.assertEqual([r['symbol'] for r in data['benchmarks']], ['^GSPC'])
+    def test_lagging_symbol_retries_and_recovers_split_history(self):
+        assets = [self.stock, {'symbol':'SNDK','market':'US','currency':'USD'}]
+        rows = [{'symbol':'TEST','status':'ok','priceDate':'2026-11-25'}, {'symbol':'SNDK','status':'ok','priceDate':'2026-11-19'}]
+        fresh = {'symbol':'SNDK','status':'ok','priceDate':'2026-11-25','splitFactor':8}
+        with patch.object(server,'fetch_stock',return_value=fresh) as fetch:
+            server.repair_lagging_prices(rows,assets,'2026-11-13','2026-11-26')
+            fetch.assert_called_once_with(assets[1],'2026-11-13','2026-11-26',minimum_date='2026-11-25')
+        self.assertEqual(rows[1]['splitFactor'],8)
+    def test_missing_later_closes_are_marked_stale_without_invention(self):
+        assets = [self.stock, {'symbol':'SNDK','market':'US','currency':'USD'}]
+        rows = [{'symbol':'TEST','status':'ok','priceDate':'2026-11-25'}, {'symbol':'SNDK','status':'ok','priceDate':'2026-11-19','currentPrice':94.39}]
+        with patch.object(server,'fetch_stock',side_effect=ValueError('missing')):
+            server.repair_lagging_prices(rows,assets,'2026-11-13','2026-11-26')
+        self.assertEqual(rows[1]['status'],'stale')
+        self.assertEqual(rows[1]['priceDate'],'2026-11-19')
+        self.assertEqual(rows[1]['currentPrice'],94.39)
+    def test_exchange_holiday_is_not_marked_stale(self):
+        rows=[{'symbol':'TEST','status':'ok','priceDate':'2026-11-25'}]
+        with patch.object(server,'fetch_stock') as fetch:
+            server.repair_lagging_prices(rows,[self.stock],'2026-11-13','2026-11-26')
+            fetch.assert_not_called()
+        self.assertEqual(rows[0]['status'],'ok')
     def test_currency_mismatch(self):
         chart = self.chart([('2026-11-10', 100)])
         chart['meta']['currency'] = 'EUR'

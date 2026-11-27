@@ -78,12 +78,15 @@ def calculate(stock, purchase_date, chart, as_of_date=None):
     result.update(basePrice=base['price'] * factor(day), currentPrice=price, returnPct=ret, history=history, priceDate=day, asOf=datetime.fromtimestamp(stamp, timezone.utc).isoformat(), status='ok', splitFactor=factor(day), message='')
     return result
 
-def fetch_stock(stock, purchase_date, as_of_date=None):
+def fetch_stock(stock, purchase_date, as_of_date=None, minimum_date=None):
     as_of_date = as_of_date or cutoff_date()
     tz = ZoneInfo('Asia/Seoul' if stock['market'] == 'KR' else 'America/New_York')
     start = int(datetime.combine(date.fromisoformat(purchase_date) - timedelta(days=3), time.min, tzinfo=tz).timestamp())
     end = int(datetime.combine(date.fromisoformat(max(as_of_date, purchase_date)) + timedelta(days=1), time.min, tzinfo=tz).timestamp())
     params = urllib.parse.urlencode({'period1': start, 'period2': max(end, start+86400), 'interval': '1d', 'events': 'splits', 'includePrePost': 'false'})
+    if minimum_date:
+        # Bypass a cached, incomplete history only when market peers prove it lags.
+        params = urllib.parse.urlencode({'period1': start, 'period2': max(end, start+86400), 'interval': '1d', 'events': 'div,splits', 'includePrePost': 'false', '_': int(datetime.now(timezone.utc).timestamp())})
     errors = []
     for host in ['query1.finance.yahoo.com', 'query2.finance.yahoo.com']:
         try:
@@ -94,10 +97,32 @@ def fetch_stock(stock, purchase_date, as_of_date=None):
             chart = data['chart']
             if chart.get('error') or not chart.get('result'):
                 raise ValueError(str(chart.get('error', '가격 없음')))
-            return calculate(stock, purchase_date, chart['result'][0], as_of_date)
+            result = calculate(stock, purchase_date, chart['result'][0], as_of_date)
+            if minimum_date and (result.get('priceDate') or '') < minimum_date:
+                raise ValueError('시장 최근 확인 거래일 ' + minimum_date + ' 종가가 제공되지 않습니다')
+            return result
         except Exception as exc:
             errors.append(str(exc))
     raise ValueError('; '.join(errors))
+
+def repair_lagging_prices(rows, assets, purchase_date, as_of_date):
+    """Detect old symbol histories without treating exchange holidays as gaps."""
+    by_symbol = {asset['symbol']: asset for asset in assets}
+    latest_by_market = {}
+    for row in rows:
+        if row.get('status') == 'ok' and row.get('priceDate'):
+            market = by_symbol[row['symbol']]['market']
+            latest_by_market[market] = max(latest_by_market.get(market, ''), row['priceDate'])
+    for index, row in enumerate(rows):
+        asset = by_symbol[row['symbol']]
+        expected = latest_by_market.get(asset['market'])
+        if row.get('status') != 'ok' or not expected or (row.get('priceDate') or '') >= expected:
+            continue
+        try:
+            rows[index] = fetch_stock(asset, purchase_date, as_of_date, minimum_date=expected)
+        except Exception as exc:
+            row.update(status='stale', message='최근 종가 누락: 확인 가격일 ' + str(row.get('priceDate')) + ', 같은 시장 최근 거래일 ' + expected + '. ' + str(exc))
+
 
 def refresh(as_of_date=None):
     global SNAPSHOT
@@ -122,6 +147,7 @@ def refresh(as_of_date=None):
                 rows.append(row)
                 with LOCK:
                     STATE['completed'] += 1
+        repair_lagging_prices(rows, assets, config['purchaseDate'], as_of_date)
         order = {s['symbol']: i for i, s in enumerate(assets)}
         rows.sort(key=lambda row: order[row['symbol']])
         stock_symbols = {s['symbol'] for s in config['stocks']}
