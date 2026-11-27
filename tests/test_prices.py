@@ -77,6 +77,18 @@ class ClosingPriceTests(unittest.TestCase):
             server.repair_lagging_prices(rows,[self.stock],'2026-11-13','2026-11-26')
             fetch.assert_not_called()
         self.assertEqual(rows[0]['status'],'ok')
+    def test_partial_response_cannot_overwrite_newer_verified_close(self):
+        old={'symbol':'SNDK','status':'ok','priceDate':'2026-11-25','basePrice':885.04,'currentPrice':73.61,'returnPct':-33.46,'splitFactor':8,'fetchedAt':'verified'}
+        partial={'symbol':'SNDK','status':'ok','priceDate':'2026-11-19','currentPrice':94.39,'returnPct':-14.68,'splitFactor':1}
+        kept=server.prefer_newer_history(partial,old)
+        self.assertEqual(kept['priceDate'],'2026-11-25')
+        self.assertEqual(kept['splitFactor'],8)
+        self.assertEqual(kept['fetchedAt'],'verified')
+        self.assertEqual(old.get('message'),None)
+    def test_same_day_provider_correction_is_accepted(self):
+        old={'priceDate':'2026-11-25','returnPct':10}
+        fresh={'priceDate':'2026-11-25','returnPct':9}
+        self.assertEqual(server.prefer_newer_history(fresh,old),fresh)
     def test_currency_mismatch(self):
         chart = self.chart([('2026-11-10', 100)])
         chart['meta']['currency'] = 'EUR'

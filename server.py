@@ -105,6 +105,15 @@ def fetch_stock(stock, purchase_date, as_of_date=None, minimum_date=None):
             errors.append(str(exc))
     raise ValueError('; '.join(errors))
 
+def prefer_newer_history(row, previous):
+    # A partially backfilled response must not erase a verified later close.
+    if previous and previous.get('returnPct') is not None and (previous.get('priceDate') or '') > (row.get('priceDate') or ''):
+        saved = dict(previous)
+        saved['message'] = '새 조회 응답의 종가 이력이 더 오래되어 기존에 확인한 최신 거래일 종가를 유지합니다'
+        return saved
+    return row
+
+
 def repair_lagging_prices(rows, assets, purchase_date, as_of_date):
     """Detect old symbol histories without treating exchange holidays as gaps."""
     by_symbol = {asset['symbol']: asset for asset in assets}
@@ -140,7 +149,7 @@ def refresh(as_of_date=None):
             for future in concurrent.futures.as_completed(jobs):
                 stock = jobs[future]
                 try:
-                    row = future.result()
+                    row = prefer_newer_history(future.result(), old.get(stock['symbol']))
                 except Exception as exc:
                     row = dict(old.get(stock['symbol'], {'symbol': stock['symbol'], 'basePrice': None, 'currentPrice': None, 'returnPct': None, 'history': [], 'asOf': None}))
                     row.update(status='stale' if row.get('currentPrice') is not None else 'error', message='가격 조회 실패: ' + str(exc))
